@@ -1,0 +1,30 @@
+cd downloads
+ssh
+ssh -i 20BCE2835-2_key.pem Suraj2@IP address
+cd folder1 
+lsblk
+cd /mnt/data
+vi sample.txt
+sudo vi sample.txt
+sudo vi /etc/fstab
+sudo vi/etc/fstab
+username : user-20BCE2835
+key pair name : 20BCE2835_key
+Saving a .txt file in command prompt :
+ (a) press 'i' and then start typing your desired content
+ (b) Now having written press 'ESC' to switch to command mode
+ (c) Now first type ':' and then 'wq!' to save the file OR use any other command
+Spring Boot project in Azure Protal using the cloud shell
+Entering into another VM from the first VM
+ (a) First enter into the first VM uisng the command given in the step 3
+ (b) cd folder1
+ (c) ssh -i 20BCE2835-1_key.pem Suraj2@IP Address
+For using the ping command, change the directory to the OpenSSH, copy the whole path by reaching to the desired folder
+  For windows : cd C:\Windows\System32\OpenSSH
+ and then just use the ping command followed by the public IP Address
+ 
+COPYING THE KEY OF A VIRTUAL MACHINE TO THE OTHER VITUAL MACHINE
+(a) pwd command
+(b) exit from all the VMs, but be in the downloads/key directory
+(c) scp -i 20BCE2835-1_key.pem 20BCE2835-2_key.pem uer-20BCE2835@IP address:/(pwd address)/folder1
+Now type 'cd folder1/' and type 'ls' to check if the key has been copied or not 
