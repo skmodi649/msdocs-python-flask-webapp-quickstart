@@ -28,3 +28,19 @@ COPYING THE KEY OF A VIRTUAL MACHINE TO THE OTHER VITUAL MACHINE
 (b) exit from all the VMs, but be in the downloads/key directory
 (c) scp -i 20BCE2835-1_key.pem 20BCE2835-2_key.pem uer-20BCE2835@IP address:/(pwd address)/folder1
 Now type 'cd folder1/' and type 'ls' to check if the key has been copied or not 
+
+
+DEPLOYING OF STATIC WEBSITE ON DOCKER HUB :
+1. sudo docker run -d -P --name static-website johnpm12/stat
+2. sudo docker port static-website
+3. sudo docker stop static-website
+4. sudo docker rm 4ea
+5. sudo docker image rm johnpm12/stat
+
+IMAGE BUILDING :
+1. sudo docker build -t johnpm12/teststat
+2. sudo docker run -d -P --name static-website johnpm12/teststat
+3. sudo docker prot static-website
+4. sudo docker login
+5. suod docker push johnpm12/teststat
+6. suod docker logout
